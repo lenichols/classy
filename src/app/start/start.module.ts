@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { StartComponent } from './start.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { StartRoutingModule } from './start-routing.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ StartComponent ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    StartRoutingModule
+  ],
+  bootstrap: [ StartComponent ]
 })
 export class StartModule { }
