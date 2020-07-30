@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import { StartComponent } from './start/start.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,
