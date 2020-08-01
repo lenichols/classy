@@ -1,10 +1,11 @@
 <div class="sitetitle">Class<span>y</span></div>
-<div class="subtitle">Enter a title an press "Enter" to launch a Class<span>room</span></div>
+<div class="subtitle">Enter a title then press "Enter" to launch a Class<span>room</span></div>
+<div data-cl="typed-title" class="titlebox-text">{{ titlebox.value }}</div>
 <div class="start-container">
-  <form >
-    <input type="text" name="classname" maxlength="100" placeholder="My Class Title">
-  </form>
+    <input #titlebox data-cl="titlebox" type="text" name="classname" maxlength="100" placeholder="My Class Title" (keyup)="0" (keyup.enter)="generateClassroomURL(titlebox.value)" >
 </div>
 <div class="options">
   <a>account</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>support</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>privacy</a>
 </div>
+<ngx-spinner></ngx-spinner>
+

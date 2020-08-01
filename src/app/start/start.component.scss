@@ -161,8 +161,12 @@ input[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
   font-size: 12px;
   color: #7bdee0;
 
-  a {
-    color: #1aa4a4;
+    a {
+      color: #1aa4a4;
+    }
   }
-}
+
+  .titlebox-text {
+    text-align: center;
+  }
 
